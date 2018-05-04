@@ -1,0 +1,20 @@
+# GNU Screen - main configuration file 
+# All other .screenrc files will source this file to inherit settings.
+
+hardstatus on
+
+hardstatus alwayslastline " %-Lw%{= Bw}%50>%n%f* %t%{-}%+Lw%< %=| %c:%s "
+
+hardstatus string '%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-= %{KG} %H%{KW}|%{KY}%101`%{KW}|%D %M %d %Y%{= Kc} %C%A%{-}'
+
+sorendition 02 40
+
+term xterm-256color
+
+defencoding utf8
+
+bind b encoding big5 utf8
+
+bind u encoding utf8 utf8
+
+defscrollback 2048
